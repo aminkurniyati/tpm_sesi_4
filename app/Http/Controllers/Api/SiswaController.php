@@ -41,7 +41,7 @@ class SiswaController extends Controller
             return response([
                 'message' => 'Data berhasil ditampilkan',
                 'data' => Siswa::FindOrFail($id)
-            ], 304);
+            ], 302);
         } catch (\Throwable $th) {
             return response([
                 'message' => 'Data tidak ditemukan',
